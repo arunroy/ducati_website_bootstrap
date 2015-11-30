@@ -13,7 +13,9 @@ Notes:	 Hand coded for Udemy.com
 /* --------------------------------------
    Layout
    -------------------------------------- */
-
+body{
+  background: #161616;
+}
 
 
 /* --------------------------------------
@@ -25,6 +27,9 @@ Notes:	 Hand coded for Udemy.com
 /* --------------------------------------
    Navbar
    -------------------------------------- */
+   .navbar-fixed-top{
+     background: linear-gradient(#262626,#000000,#262626);
+   }
    #searchInput{
      width: 150px;
      height: 30px;
@@ -34,7 +39,21 @@ Notes:	 Hand coded for Udemy.com
      padding: 13px 15px;
    }
 
+#navbar-brand-logo
+{
+  width: 60px;
+  height: 60px;
+}
 
+.menuitem{
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bolder;
+  /*letter-spacing: 1px;*/
+}
+.navbar-nav{
+  margin:18px;
+}
 /* --------------------------------------
    Carousel
    -------------------------------------- */
