@@ -105,20 +105,29 @@ body{
      margin-bottom: 20px;
      border:none;
    }
-   .panel-body p a{
-     margin: 0px;
-     padding: 0px;
-   }
-   .panel-body p{
-     padding: 10px 20px;
-     text-align: justify;
-   }
+
    #features{
      text-align: center;
      background-color: white;
    }
 
-
+   #carouselServices{
+     margin: 10px 50px;
+   }
+   .panel-features{
+        background-color: white;
+   }
+.carousel-control{
+  color: grey;
+}
+.featurette p{
+  text-align: justify;
+  color: rgb(51, 51, 51);
+  font-family: Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+  padding: 10px;
+}
 /* --------------------------------------
    Media Queries
    -------------------------------------- */
