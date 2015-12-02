@@ -22,6 +22,15 @@
 
 	</head>
 	<body>
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+</div>
 
 		<!-- begin body container -->
 		<div class="container" id="main">
@@ -66,7 +75,7 @@
 								</li>
 
 								<li>
-									<a href="#" class="menuitem">services</a>
+									<a href="../index.html" class="menuitem">services</a>
 								</li>
 
 								<li>
@@ -127,46 +136,45 @@
                 <!-- begin wrapper for carousel slides -->
                 <div class="carousel-inner" role="listbox">
 
-                  <div class="item active">
-                    <img src="../images/carousel1.jpg" alt="Ducati Services Image 1" />
+                  <div class="item active" id="slide1">
+                    <img src="../images/carousel1.jpg" alt="Ducati Services Image 1"/>
                     <div class="carousel-caption">
-                      <h3>Lorem ipsum dolor sit amet, consectetur adipisicing.</h3>
+                      <h3>LOW SPEED EXCITEMENT.</h3>
                       <p>
-                        Random gibberish text to use in web pages, site templates and in typography demos.
-                        Get rid of Lorem Ipsum forever. A tool for web designers who want to save time.
+                         The XDiavel is "low speed excitement", where the pace relaxed at low speed is typical of the world cruiser,
+                         while the excitement and adrenaline of sports riding are proper of Ducati.
                       </p>
                     </div>
                   </div>
 
-                  <div class="item">
+                  <div class="item" id="slide2">
                     <img src="../images/carousel2.jpg" alt="Ducati Services Image 1" />
                     <div class="carousel-caption">
-                      <h3>Lorem ipsum dolor sit amet, consectetur adipisicing.</h3>
+                      <h3>CRUISER CULTURE, ITALIAN BEAUTY.</h3>
                       <p>
-                        Random gibberish text to use in web pages, site templates and in typography demos.
-                        Get rid of Lorem Ipsum forever. A tool for web designers who want to save time.
+                        The new XDiavel is the meeting of the Italian culture with the cruiser, the performance that blends with ergonomics.
                       </p>
                     </div>
                   </div>
 
-                  <div class="item">
+                  <div class="item" id="slide3">
                     <img src="../images/carousel3.jpg" alt="Ducati Services Image 1" />
                     <div class="carousel-caption">
-                      <h3>Lorem ipsum dolor sit amet, consectetur adipisicing.</h3>
+                      <h3>ARE YOU READY TO CHANGE POSITION?</h3>
                       <p>
-                        Random gibberish text to use in web pages, site templates and in typography demos.
-                        Get rid of Lorem Ipsum forever. A tool for web designers who want to save time.
+                        Wide handlebars and footpegs forward.
+                        The road runs under the wheels, accompanied by a feeling of control and comfort typical of a cruiser.
                       </p>
                     </div>
                   </div>
 
-                  <div class="item">
+                  <div class="item" id="slide4">
                     <img src="../images/carousel4.jpg" alt="Ducati Services Image 1" />
                     <div class="carousel-caption">
-                      <h3>Lorem ipsum dolor sit amet, consectetur adipisicing.</h3>
+                      <h3>DESIGN &amp TECHNOLOGY.</h3>
                       <p>
-                        Random gibberish text to use in web pages, site templates and in typography demos.
-                        Get rid of Lorem Ipsum forever. A tool for web designers who want to save time.
+                        Long, low, muscular, with modern forms and technologically advanced components. But above all sexy.
+                        So it had to be the XDiavel in the minds of designers Ducati, when they started working on the first drafts
                       </p>
                     </div>
                   </div>
@@ -209,9 +217,13 @@
                       adrenalin of sports riding is unmistakeably Ducati.
                       <a href="#">Read more...</a>
                   </p>
-                       <a href="#myModal" class="btn btn-default btn-primary" id="btnTestRide" role="button" data-toggle="modal">
+                       <a href="#myModal" class="btn btn-default btn-primary hidden-sm" id="btnTestRide" role="button" data-toggle="modal">
                          <span class="glyphicon glyphicon-random">&nbsp&nbsp</span>Book a test ride
                        </a>
+                       <!-- Visible only on small devices -->
+               <div class="well well-small visible-sm">
+                 <a href="" class="btn btn-large btn-block btn-default"><span class="glyphicon glyphicon-phone"></span> Give us a call!</a>
+               </div><!-- end well-small -->
 
 
                 <iframe id="frMap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.0067557199886!2d77.59396991423257!3d12.97141931839329!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1679bdeeed45%3A0x38ffc572e290548d!2sDucati+Bengaluru!5e0!3m2!1sen!2sin!4v1449039070951" frameborder="0" style="border:0" allowfullscreen></iframe>
@@ -221,22 +233,16 @@
 											<div class="modal-header">
 												<button class="close" data-dismiss="modal">&times;</button>
 
-												<h4 class="modal-title">A Modal Window</h4>
+												<h4 class="modal-title">Book a Test Ride</h4>
 											</div><!-- end modal-header -->
 											<div class="modal-body">
 												<h4>Text in a modal</h4>
 
-												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-
-												<h4>Popovers in a modal</h4>
-												<a href="#" class="btn btn-danger pop" data-toggle="popover" data-placement="top" data-original-title="You clicked it!" data-content="I knew you would.">Don't click this button</a>
-
-												<h4>Tooltips in a modal</h4>
-												<a href="" data-original-title="Tooltip" rel="tooltip">This link</a> should have a tooltip, and so should <a href="#" data-original-title="Woohoo!" rel="tooltip">this one</a>!
+												<p>If you’re interested in a new Ducati motorcycle, we encourage you to twist the throttle and experience the thrill of a Ducati first-hand. Choose your model, choose a dealer, and take the first steps in making your dream a reality!</p>
 
 												<hr>
 
-												<p><small class="text-muted">PS. This form doesn't do anything. Just a heads up.</small></p>
+												<p><small class="text-muted">PS. Enter your info for a free test ride.</small></p>
 
 												<form class="form-horizontal">
 													<div class="form-group">
@@ -335,10 +341,8 @@
 
 							<div class="col-sm-4">
 								<h6>About Us</h6>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-									 sed do eiusmod tempor incididunt ut labore et dolore magna
-									  aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-										ullamco laboris nisi ut aliquip ex ea commodo consequat.
+								<p id="footerAboutUs">Ducati builds emotions.The world's most attractive motorcycles are the result of a deep commitment to racing competitions;
+									 they are the purest expression of refined skill, unmistakable design and above all, a great passion for bikes.
 								</p>
 							</div><!-- end col-sm-4 -->
 
@@ -353,16 +357,19 @@
 							</div><!-- end col-sm-2 -->
 
 							<div class="col-sm-2">
-								<h6>Follow Us</h6>
+								<h6>Related Sites</h6>
 								<ul class="unstyled">
-									<li><a href="#">Twitter</a></li>
-									<li><a href="#">Facebook</a></li>
-									<li><a href="#">Google Plus</a></li>
+									<li><a href="#">Ducati Racing Sports</a></li>
+									<li><a href="#">Ducati Dirt Biking</a></li>
+									<li><a href="#">Ducati Desert Cruisers</a></li>
 								</ul>
 							</div><!-- end col-sm-2 -->
 
 							<div class="col-sm-2">
 								<h6>Coded with <span class="glyphicon glyphicon-heart"></span> by Arun</h6>
+                <div class="sociallink">
+                  <a href="https://twitter.com/DucatiMotor" class="twitter-follow-button" data-show-count="false">Follow @DucatiMotor</a>
+                    <div class="fb-like" data-href="https://www.facebook.com/DucatiIndia" data-width="100" data-layout="box_count" data-action="like" data-show-faces="true" data-share="true"></div>
 							</div><!-- end col-sm-2 -->
 						</div><!-- end row -->
 					</div><!-- end container -->
@@ -382,6 +389,8 @@
 
 			<!-- Custom JS -->
 			<script src="../includes/js/script.js"></script>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+      </script>
 
 	</body>
 </html>
