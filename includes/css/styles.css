@@ -120,8 +120,8 @@ body {
 }
 .featurette p {
     text-align: justify;
-    font-family: Helvetica, sans-serif;
-    font-size: 17px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
     padding: 10px;
 }
 .mainheroelementheader {
@@ -136,7 +136,7 @@ body {
 .mainheroelementtagline {
     color: rgb(103, 103, 103);
     text-align: center;
-    font-family: Ubuntu, sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-weight: lighter;
     margin: 5px 10px 20px;
 }
@@ -169,6 +169,9 @@ body {
 #latestbiketext {
     font-size: 16px;
 }
+#carouselServices{
+  border-radius: 2px;
+}
 hr {
     margin: 5px 0px;
     overflow: hidden;
@@ -190,6 +193,9 @@ hr {
 }
 .fadeInLeft {
     animation: fadein 1.0s;
+}
+.fadeInRight {
+  animation: 1.0s;
 }
 .slideInUp {
     animation: fadein 1.0s;
@@ -213,6 +219,13 @@ hr {
 }
 .btn-primary:hover {
     background-color: rgba(0, 0, 0, 0.9);
+}
+.btn-primary:active{
+    background-color: red;
+}
+.btn-primary:checked
+{
+  background-color: red;
 }
 .modal-content {
     background-color: rgba(0, 0, 0, 0.8);
@@ -351,6 +364,9 @@ border: 1px solid;
         font-size: 16px;
         padding: 10px 5px;
     }
+    .navbar-inverse .navbar-nav>li>a{
+      color: red;
+    }
     #carouselImg1 {
         src: url("../images/xdiavel6.jpg");
     }
@@ -414,7 +430,4 @@ border: 1px solid;
         font-size: 14px;
         padding: 10px 5px;
     }
-}
-.btn:focus, .btn:hover, .btn:active {
-    background-color: red !important;
 }
